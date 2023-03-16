@@ -1,6 +1,6 @@
-package com.example.modid.mixin;
+package com.github.platymemo.create_and_destroy.mixin;
 
-import com.example.modid.ExampleMod;
+import com.github.platymemo.create_and_destroy.Destroy;
 
 import net.minecraft.client.Minecraft;
 
@@ -15,6 +15,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MinecraftMixin {
 	@Inject(method = "<init>", at = @At("TAIL"))
 	private void example$init(GameConfig gameConfig, CallbackInfo ci) {
-		ExampleMod.LOGGER.info("Hello from {}", ExampleMod.NAME);
+		Destroy.LOGGER.info("Hello from {}", Destroy.NAME);
 	}
 }

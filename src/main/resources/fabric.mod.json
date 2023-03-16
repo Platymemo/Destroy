@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "create_and_destroy",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Destroy",
+  "description": "The Create team gave you Create. Now, I give you Destroy.",
   "authors": [
-    "Me!"
+    "Platymemo"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/Platymemo/Destroy"
   },
-  "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/create_and_destroy/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "com.github.platymemo.create_and_destroy.Destroy"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "create_and_destroy.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
